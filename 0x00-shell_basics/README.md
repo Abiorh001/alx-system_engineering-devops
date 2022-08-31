@@ -8,3 +8,4 @@ Exercise 5: ls -na . === display current directory in a numeric order n long for
 Exercise 6 : mkdir /tmp/my_first_dirctory === make directory my_first_directory in the /tmp/ directory
 Exercise 7 : mv /tmp/betty /tmp/my_first_directory/betty === move betty to from /tmp/ to /tmp/my_first_directory
 Exercise 8 : rm /tmp/my_first_directory/betty === delete betty from /tmp/my_first_directory
+Exercise 9 : rmdir /tmp/my_first_directory === delete directory /my_first_directry from /tmp/
