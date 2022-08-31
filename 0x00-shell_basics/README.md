@@ -9,3 +9,5 @@ Exercise 6 : mkdir /tmp/my_first_dirctory === make directory my_first_directory 
 Exercise 7 : mv /tmp/betty /tmp/my_first_directory/betty === move betty to from /tmp/ to /tmp/my_first_directory
 Exercise 8 : rm /tmp/my_first_directory/betty === delete betty from /tmp/my_first_directory
 Exercise 9 : rmdir /tmp/my_first_directory === delete directory /my_first_directry from /tmp/
+Exercise 10 : cd - === change current working dir to previous one
+Exercise 11 : ls -la . .. /boot 
