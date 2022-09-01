@@ -1,3 +1,3 @@
 #shell permissions
-Soltuins on shell permission task 0-17
+Solution on shell permission task 0-17
 
