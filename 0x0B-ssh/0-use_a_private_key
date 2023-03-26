@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# a bash script to connect to a sever using a private ssh key
+cat ~/.ssh/school | ssh ubuntu@35.174.204.19
