@@ -6,11 +6,7 @@ if [ $# -lt 4 ]; then
     exit 1
 fi
 
-# Assign parameters to variables
-path_to_file=$1
-ip_address=$2
-username=$3
-path_to_ssh_key=$4
+
 
 # Use scp to transfer the file to the user's home directory on the server
-scp -o "StrictHostKeyChecking=no" -i "$path_to_ssh_key" "$path_to_file" "$username@$ip_address:~/"
+scp -o "StrictHostKeyChecking=no" -i "$4" "$1" "$2"@"$3":~/
