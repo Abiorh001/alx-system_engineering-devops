@@ -9,7 +9,7 @@ sudo apt-get install -y haproxy
 # Update HAProxy configuration file to configure it with my two servers
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
 
-sudo cat > /etc/haproxy/haproxy.cfg << EOF
+sudo tee /etc/haproxy/haproxy.cfg > /dev/null << EOF
 global
     log /dev/log    local0
     log /dev/log    local1 notice
