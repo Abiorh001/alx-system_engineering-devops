@@ -2,8 +2,8 @@
 """Fetching JSON data from an API and dumping to CSV."""
 
 import csv
-import sys
 import requests
+import sys
 
 
 if __name__ == "__main__":
