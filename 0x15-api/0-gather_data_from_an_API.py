@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ a script to list an employee task from json api"""
 import requests
 import sys
