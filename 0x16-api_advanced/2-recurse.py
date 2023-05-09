@@ -5,20 +5,22 @@ import requests
 
 
 def recurse(subreddit, hot_list=[]):
-    """a function to perform an api recursively"""
+    """a functiion to perform an api recursively"""
 
+    if hot_list is None:
+        hot_list = []
     url = "https://www.reddit.com/r/{}/hot.json?limit=100".format(subreddit)
     headers = {'User-Agent': 'chrome'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
-        posts = response.json()
+        data = response.json()
         posts = data.get("data").get("children")
 
         for post in posts:
             hot_list.append(post['data']['title'])
 
-        if posts['data']['after'] is not None:
+        if data['data']['after'] is not None:
             recurse(subreddit, hot_list=hot_list)
         return hot_list
     else:
