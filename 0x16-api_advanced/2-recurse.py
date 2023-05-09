@@ -7,8 +7,6 @@ import requests
 def recurse(subreddit, hot_list=[]):
     """a functiion to perform an api recursively"""
 
-    if hot_list is None:
-        hot_list = []
     url = "https://www.reddit.com/r/{}/hot.json?limit=100".format(subreddit)
     headers = {'User-Agent': 'chrome'}
     response = requests.get(url, headers=headers, allow_redirects=False)
